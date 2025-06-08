@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,150..300..600..750..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: rubik;
+}
+
+body {
+    background-color: #f7f7f9;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.headerSuperior2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin-left: 3rem;
+    margin-top: 2.3rem;
+}
+
+.information a {
+    position: absolute;
+    z-index: 4000;
+}
+
+.account {
+    top: 2.5rem;
+    right: 17rem;
+
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.account:hover {
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+    color: #fad800;
+}
+
+.btn {
+    top: 1.6rem;
+    right: 5rem;
+    background-color: #10a650;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 750;
+    letter-spacing: 5px;
+    border-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.197);
+    transition: all 0.6s ease;|
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    background-color: #fad800;
+    color: #333;
+}
+
+.search input {
+    width: 250px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: .9rem;
+}
+
+.search button {
+    background-color: fff;
+    padding: 7px 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 10px 10px 0;
+    color: fff;
+}
+
+.logo img {
+    width: 250px;
+    transition: all 0.4s ease;
+}
+
+.logo img:hover {
+    transition: all 0.4s ease;
+    transform: scale(0.9);
+}
+
+.logo {
+    position: relative;
+    background-color: #0F43A6;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu {
+    background-color: #fad800;
+    padding: 1rem;
+    box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.197);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav ul li a {
+    font-size: 18px;
+    color: #111;
+    display: block;
+    font-weight: 750;
+    transition: all 0.4s ease;
+}
+
+.container-menu ul li a:hover {
+    transform: scale(1.1);
+    color: #111;
+    transition: all 0.4s ease;
+}
+
+.lumia {
+    margin-top: 12em;
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f7f7f9;
+    min-height: 100vh;
+}
+
+.lumia-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conceptos {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 0 0.5rem #00000078;
+    margin-bottom: 2rem;
+}
+
+.conceptos h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.conceptos h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.conceptos-impt {
+    display: flex;
+    justify-content: space-between;
+    color: #111;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lumia-secondsInfo {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5rem #00000078;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lumia-secondsInfo.big {
+    padding: 2rem;
+}
+
+.lumia-img-1 {
+    background-image: url(Imágenes-Recursos/imagen-principal.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.lumia-img-2 {
+    background-image: url(Imágenes-Recursos/pobrezaAA.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.lumia-img-3 {
+    background-image: url(Imágenes-Recursos/elsalvador.png);
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.lumia-img-4 {
+    background-image: url(Imágenes-Recursos/imagen-principal.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.lumia-secondsInfo.big .lumia-img {
+    height: 260px;
+}
+
+.lumia-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lumia-title {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lumia-secondsInfo h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+.lumia-secondsInfo.big h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.lumia-secondsInfo p {
+    color: #111;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lumia-impt {
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.lumia-footer {
+    background: #0F43A6;
+    color: #fff;
+    padding: 3rem 1rem 2rem 1rem;
+    margin-top: 0;
+}
+
+.footer-logo img {
+    position: absolute;
+    margin-top: 4.5rem;
+    margin-left: 13rem;
+    width: 200px;
+    transition: all 0.4s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.footer-links a {
+    color: #fad800;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.footer-links a:hover {
+    transform: scale(1.1);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    color: #fad800;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-left: 0;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.footer-social img {
+    transition: all 0.4s ease;
+}
+
+.footer-social img:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.5);
+    box-shadow: #fff;
+}
+
+.lumia2 {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.512);
+    padding: 7rem;
+    margin-top: 5rem;
+}
+
+.lumia2-container h2 {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.lumia2-container p {
+    width: 900px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
